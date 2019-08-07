@@ -3,10 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/bootstrap-responsive.min.css')}}">
+            <link rel="stylesheet" href="{{ asset('css/fullcalendar.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/maruti-style.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/maruti-media.css') }}" class="skin-color">
+        {% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('js/excanvas.min.js') }}"></script>
+            <script src="{{ asset('js/jquery.min.js') }}"></script>
+            <script src="{{ asset('js/jquery.ui.custom.js') }}"></script>
+            <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('js/jquery.flot.min.js') }}"></script>
+            <script src="{{ asset('js/jquery.flot.resize.min.js') }}"></script>
+            <script src="{{ asset('js/jquery.peity.min.js') }}"></script>
+            <script src="{{ asset('js/fullcalendar.min.js') }}"></script>
+            <script src="{{ asset('js/maruti.js') }}"></script>
+            <script src="{{ asset('js/maruti.dashboard.js') }}"></script>
+            <script src="{{ asset('js/maruti.chat.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
